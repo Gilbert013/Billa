@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+    th:fragment="layout(title, content, css, scripts)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 페이지별 추가 css-->
+    <th:block th:replace="${css}"></th:block>
+</head>
+<body>
+    <!--Header-->
+    <div th:replace="~{common/header :: header}"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!--페이지 콘텐츠-->
+        <div th:replace="${content}" class="container my-4">
+            <!-- 각 페이지의 콘텐츠가 여기에 삽입됩니다 -->
+        </div>
+    </main>
+
+    <!--Footer-->
+    <div th:replace="~{common/footer :: footer}"></div>
+
+    <!--Custom JS-->
+    <script th:src="@{/js/app.js}"></script>
+
+    <!-- 페이지별 추가 JS -->
+    <th:block th:replace="${scripts}"></th:block>
+</body>
+</html>
