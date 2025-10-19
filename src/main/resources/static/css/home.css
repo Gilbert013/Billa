@@ -1,0 +1,46 @@
+.container{
+    background-color: #fc4545;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.form-container{
+    background: white;
+    border-radius: 4px;
+    width: 200px;
+    height: 120px;
+    margin: 30px 15px;
+}
+
+.left-ad{
+    background-color: white;
+    color: #fc4545;
+    width: 200px;
+    height: 600px;
+    margin: 0 15px;
+}
+
+.left-container{
+    display: inline-block;
+}
+
+.middle-container{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+.right-container{
+    display: inline-block;
+}
+
+.contents{
+    border-radius: 8px;
+    background-color: white;
+    color: #fc4545;
+    width: 250px;
+    height: 250px;
+    
+}

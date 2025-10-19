@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+}
+
+.footer-container{
+    background-color: white;
+}
+
+.logo{
+    font-size: 1.4rem;
+    color: #fc4545;
+}
+
+.copyright-comment{
+    color: #fc4545
+}

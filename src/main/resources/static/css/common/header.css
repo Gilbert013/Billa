@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+
+.header-container{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.title{
+    padding: 15px 30px;
+}
+
+.title-logo{
+    color: #fc4545;
+    font-size: 3rem;
+}
+
+.nav-bar{
+    padding-top: 40px;
+    padding-right: 100px;
+}
+
+.nav-items{
+    color: #fc4545;
+    padding: 0 25px;
+    font-size: 1.5rem;
+}

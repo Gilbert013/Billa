@@ -6,8 +6,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <th:block th:fragment="css">
+        <link rel="stylesheet" th:href="@{/css/home.css}">
+    </th:block>
 </head>
 <body>
-    홈
+    <div th:fragment="content" class="container">
+        <div class="left-container">
+            <div class="form-container">
+                <!-- 로그인 폼 -->
+                <form>
+                    <!-- 이메일 -->
+                    <div>
+                        <label for="email" class="">이메일: </label>
+                        <input type="email" id="email" name="email" class="" required>
+                    </div>
+
+                    <!-- 비밀번호 -->
+                    <div>
+                        <label for="password" class="">비밀번호: </label>
+                        <input type="password" id="password" name="password" class="" required>
+                    </div>
+
+                    <button type="submit" class="">로그인</button>
+                </form>
+            </div>
+
+            <div class="left-ad">
+                광고
+            </div>
+        </div>
+
+        <div class="middle-container">
+            <div class="contents">커뮤니티</div>
+            <div class="contents">Q&A</div>
+            <div class="contents">정보</div>
+            <div class="contents">홍보</div>
+        </div>
+
+        <div class="right-container">
+            광고
+        </div>
+    </div>
+
+
+    <th:block th:fragment="scripts">
+        <script>
+
+        </script>
+    </th:block>
 </body>
 </html>

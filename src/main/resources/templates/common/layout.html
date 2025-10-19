@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- 페이지별 추가 css-->
+    <!-- header css -->
+    <link rel="stylesheet" th:href="@{/css/common/header.css}">
+    <!-- footer css -->
+    <link rel="stylesheet" th:href="@{/css/common/footer.css}">
+
+    <!-- 페이지별 추가 css -->
     <th:block th:replace="${css}"></th:block>
 </head>
 <body>
